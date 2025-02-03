@@ -1,0 +1,82 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f3f3f5, #ceedf7);
+  }
+  .login-box {
+    background: #eef8ffec;
+    padding: 20px;
+    width: 400px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(30, 30, 31, 0.26);
+    /* text-align: center; */
+    color: rgb(33, 116, 163);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .login-box.register-box
+  {
+    min-width: 400px;
+    max-width: 600px;
+    width:100%;
+  }
+  h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .group
+  {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+    background: #dddde04f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #38393aaa;
+  }
+  
+  button {
+    transition: 0.3s;
+    padding:40px;
+  }
+  
+  button:hover {
+    background: #69858d;
+  }
+  
+  /* Toast Notifications */
+  .Toastify__toast {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @media (max-width:600px)
+  {
+    .group
+    {
+        flex-direction: column;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
